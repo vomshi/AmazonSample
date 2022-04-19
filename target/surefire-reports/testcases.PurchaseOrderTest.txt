@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: testcases.PurchaseOrderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 49.763 sec <<< FAILURE!
+setUp(testcases.PurchaseOrderTest)  Time elapsed: 49.544 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) [GFX1-]: Fallback WR to SW-WR
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) |[4][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=4.71529) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.257337) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.205497) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.240674) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.879375) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.729428) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.479494) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'IYYU-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:135)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at utils.DriverUtils.getDriver(DriverUtils.java:19)
+	at testcases.PurchaseOrderTest.setUp(PurchaseOrderTest.java:24)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) [GFX1-]: Fallback WR to SW-WR
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) |[4][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=4.71529) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.257337) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.205497) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.240674) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.879375) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.729428) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.479494) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:123)
+	... 42 more
+

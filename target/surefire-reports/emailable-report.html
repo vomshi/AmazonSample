@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">48.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">testcases.PurchaseOrderTest<td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">testcases.PurchaseOrderTest<td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">testcases.PurchaseOrderTest<td><a href="#m3"><b>test_createPurchaseOrderForSingleProduct</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>testcases.PurchaseOrderTest:setUp</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) [GFX1-]: Fallback WR to SW-WR
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) |[4][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=4.71529) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.257337) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.205497) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.240674) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.879375) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.729428) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.479494) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;IYYU-PC&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:135)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+<br/>at utils.DriverUtils.getDriver(DriverUtils.java:19)
+<br/>at testcases.PurchaseOrderTest.setUp(PurchaseOrderTest.java:24)
+<br/>35 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) [GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create)
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) [GFX1-]: Failed to connect WebRenderBridgeChild.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) [GFX1-]: Fallback WR to SW-WR
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RcANGLE(no compositor device for EGLDisplay) (t=1.91426) |[1][GFX1-]: RcANGLE(no compositor device for EGLDisplay)(Create) (t=3.03985) |[2][GFX1-]: Failed to connect WebRenderBridgeChild. (t=3.03985) |[3][GFX1-]: Fallback WR to SW-WR (t=3.06947) |[4][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=4.71529) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.257337) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.205497) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.240674) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.879375) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.729428) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=0.479494) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:123)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+<br/>at utils.DriverUtils.getDriver(DriverUtils.java:19)
+<br/>at testcases.PurchaseOrderTest.setUp(PurchaseOrderTest.java:24)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>testcases.PurchaseOrderTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>testcases.PurchaseOrderTest:test_createPurchaseOrderForSingleProduct</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
